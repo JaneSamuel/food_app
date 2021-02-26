@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF4B3A"
+    tools:context=".OnboardingActivity">
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/logo_backgrd"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="50dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/logo"
+            android:layout_marginTop="59dp"
+            android:layout_marginLeft="59dp"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:fontFamily="@font/sfprorounded"
+        android:text="Food for Everyone"
+        android:textColor="@color/white"
+        android:textSize="64sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/logo"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+
+        <ImageView
+            android:id="@+id/girl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text"
+            android:src="@drawable/girl"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text"
+            app:layout_constraintLeft_toRightOf="@id/girl"
+            app:layout_constraintBottom_toBottomOf="@id/girl"
+            android:src="@drawable/boy"
+            />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/white_circle_button"
+        android:text="Get Started"
+        android:layout_marginBottom="20dp"
+        android:textColor="#FF4B3A"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textAllCaps="false"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
